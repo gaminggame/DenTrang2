@@ -1,0 +1,144 @@
+.main-container {
+  height: 100vh;
+  background-color: lightblue;
+  display: none;
+}
+
+.name-content {
+  background-color: lightgrey;
+  border-style: solid;
+  border-color: bisque;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+.name-content .ratio-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 35px;
+}
+
+.name-content .ratio-content h1 {
+  padding: 0px 20px;
+  color: blue;
+  background-color: whitesmoke;
+  border-style: dashed;
+  border-color: turquoise;
+}
+
+.name-content .ratio-content h2 {
+  padding: 0px 10px;
+}
+
+.name-content #name1 {
+  color: red;
+}
+
+.name-content #name2 {
+  color: green;
+}
+
+.main-area .scoreturns-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area .scoreturns-content h1 {
+  border: 1px solid;
+  background-color: whitesmoke;
+  padding: 0px 20px;
+  margin-right: 30px;
+}
+
+.main-area .turn-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area .turn-content h1 {
+  margin: 5px;
+  color: black;
+}
+
+.main-area .turn-content p {
+  margin: 5px;
+}
+
+.main-area .statusgame-content {
+  text-align: center;
+  padding: 50px;
+}
+
+.main-area .statusgame-content .waiting-content {
+  display: none;
+}
+
+.main-area .statusgame-content .input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-area .statusgame-content .input-content input {
+  height: inherit;
+  font-size: 25px;
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: 2px solid var(--input-border);
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.main-area .statusgame-content .input-content button {
+  margin: 15px;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

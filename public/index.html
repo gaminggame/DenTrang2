@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server-Client Communication</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <button id="helloButton">Say Hello</button> -->
+    <div id="register">
+      <form action="" id="form">
+        <h1>Nhập tên của bạn:</h1>
+        <input
+          type="text"
+          id="username"
+          required
+          maxlength="10"
+          autocomplete="off"
+        />
+        <button type="submit">Đồng ý</button>
+      </form>
+    </div>
+
+    <!-- <button id="helloButton">Say Hello</button> -->
+    <div id="main-container" class="main-container">
+      <!-- <input id="score" type="number" placeholder="Input the value"></input> 
+        <button id= "submitBtn"> Submit score </button> -->
+
+      <div class="name-content">
+        <h1 id="name1">Player 1</h1>
+        <div class="ratio-content">
+          <h1 id="ratio1">0</h1>
+          <h2>:</h2>
+          <h1 id="ratio2">0</h1>
+        </div>
+        <h1 id="name2">Chờ người chơi 2....</h1>
+      </div>
+
+      <div class="main-area">
+        <div class="scoreturns-content">
+          <h1 id="turn1">0</h1>
+          <h1 id="turn2">0</h1>
+          <h1 id="turn3">0</h1>
+          <h1 id="turn4">0</h1>
+          <h1 id="turn5">0</h1>
+          <h1 id="turn6">0</h1>
+          <h1 id="turn7">0</h1>
+          <h1 id="turn8">0</h1>
+          <h1 id="turn9">0</h1>
+        </div>
+        <div class="turn-content">
+          <h1>TURN <span id="current-turn">1</span></h1>
+          <h2>Điểm còn lại: <span id="left-score"> 99</span></h2>
+          <!-- <p>Mốc <span id="left-milestone"> A </span></p> -->
+        </div>
+        <div class="statusgame-content">
+          <div id="waiting-content" class="waiting-content">
+            <h1 id="waiting">Chờ đối phương...</h1>
+          </div>
+          <div id="input-content" class="input-content">
+            <!-- <h2>Trắng E</h2> -->
+            <input
+              id="score"
+              type="number"
+              step="1"
+              placeholder="Nhập điểm số"
+            />
+            <button id="submitBtn">Đồng ý</input>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
